@@ -1,0 +1,37 @@
+.plach{
+    position: absolute;
+    width: 375px;
+    height: 525px;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.plach__image{
+    position: absolute;
+    width: 269.84px;
+    height: 239.93px;
+    left: 13%;
+    top: 2%;
+}
+.plach__name{
+    position: absolute;
+    font-family: Arial;
+    font-size: 20px;
+    top: 50%;
+    left: 13%;
+}
+.plach__description{
+    position: absolute;
+    font-size: 16px;
+    font-family: Arial;
+    color: #ABABAB;
+    top: 55%;
+    left: 13%;
+}
+.plach__reviews{
+    position: absolute;
+    font-family: Arial;
+    font-size: 16px;
+    color: #ABABAB;
+    top: 60%;
+    left: 54%;
+}
