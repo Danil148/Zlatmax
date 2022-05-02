@@ -8,19 +8,41 @@
     <title>Личный кабинет</title>
 </head>
 <body>
+
     <!-- Форма на Регистрацияю -->
-    <form action="php/register.php" method="post">
-        <span>Регистрация</span>
-        <span>Логин</span>
-        <input type="text" placeholder="Логин">
-        <span>Пароль</span>
-        <input type="password" placeholder="Пароль" id="password">
-        <span>Почта</span>
-        <input type="email" placeholder="Почта">
-        <span>Показать пароль</span>
-        <input type="checkbox" id="check_password">
-        <button type="submit">Подтвердить</button>
-    </form>
+    <div class="form__reg">
+        <form action="php/register.php" method="post">
+            <span class="form__reg__text">Регистрация</span>
+            <span class="form__reg__text__login">Логин</span>
+            <input type="text" placeholder="Логин" name="login" class="form__reg__login">
+            <span class="form__reg__text__password">Пароль</span>
+            <input type="password" placeholder="Пароль" id="password" name="password" class="form__reg__password">
+            <span class="form__reg__text__email">Почта</span>
+            <input type="email" placeholder="Почта" name="email" class="form__reg__email">
+            <span class="form__reg__text__check__password">Показать пароль</span>
+            <input type="checkbox" id="check_password" class="form__reg__check__password">
+            <button type="submit" name="done_reg" class="form__reg__button">Подтвердить</button>
+        </form>
+    </div>
+
+
+    <!-- Форма Авторизации -->
+
+    <div class="form__aut">
+        <form action="#" method="post">
+            <span class="form_aut__text">Авторизации</span>
+            <span class="form_aut__text__login">Логин</span>
+            <input type="text" placeholder="Логин" class="form_aut__login">
+            <span class="form_aut__text__password">Пароль</span>
+            <input type="password" placeholder="Пароль" class="form__aut__password">
+            <span class="form__aut__text__email">Почта</span>
+            <input type="email" placeholder="Почта" name="email" class="form__aut__email">
+            <button type="submit" class="form__aut__button">Подтвердить</button>
+        </form>
+    </div>
+
+
+
     <script src="js/profile-js.js"></script>
 </body>
 </html>
