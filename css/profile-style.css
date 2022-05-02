@@ -1,0 +1,92 @@
+/* регистрация */
+.form__reg{
+    background: #141414;
+    border: #141414 solid 1px;
+    padding: 10%;
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    height: 300px;
+}
+.form__reg__text{
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    top: 30px;
+    left: 178px;
+    font-size: 30px;
+    border-left: white solid 1px;
+    border-right: white solid 1px;
+    padding: 20px;
+    height: 500px;
+}
+.form__reg__text__login{
+    position: absolute;
+    color: white;
+    top: 90px;
+    font-family: Arial;
+    font-size: 25px;
+    left: 250px;
+}
+.form__reg__login{
+    position: absolute;
+    padding: 10px;
+    outline: none;
+    left: 190px;
+}
+.form__reg__text__password{
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    font-size: 25px;
+    left: 240px;
+    top: 200px;
+}
+.form__reg__password{
+    position: absolute;
+    padding: 10px;
+    outline: none;
+    left: 190px;
+    top: 250px;
+}
+.form__reg__text__email{
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    font-size: 25px;
+    left: 250px;
+    top: 310px;
+}
+.form__reg__email{
+    position: absolute;
+    padding: 10px;
+    outline: none;
+    left: 190px;
+    top: 360px;
+}
+.form__reg__text__check__password{
+    color: white;
+    font-family: Arial;
+    position: absolute;
+    font-size: 25px;
+    top: 420px;
+    left: 190px;
+}
+.form__reg__check__password{
+    position: absolute;
+    left: 278px;
+    top: 470px;
+}
+.form__reg__button{
+    position: absolute;
+    color: black;
+    border: rgb(241, 209, 149) solid 1px;
+    background: rgb(241, 209, 149);
+    padding: 10px;
+    top: 500px;
+    left: 235px;
+}
+
+
+
