@@ -33,5 +33,25 @@
     font-size: 16px;
     color: #ABABAB;
     top: 60%;
-    left: 54%;
+    left: 74%;
+}
+.plach__price{
+    position: absolute;
+    font-family: Arial;
+    font-size: 20px;
+    top: 70%;
+    left: 13%;
+    border-top: rgba(20, 20, 20, 0.5) solid 1px;
+    padding-top: 30px;
+    width: 267px;
+}
+.plach__vs{
+    position: absolute;
+    top: 75%;
+    left: 63%;
+}
+.plach__like{
+    position: absolute;
+    top: 75%;
+    left: 76%;
 }

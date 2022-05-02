@@ -25,9 +25,10 @@
         echo '<a class="plach__description">' . $article['description'] . '</a>' . '<br>';
         echo '<a  class="plach__reviews">' . $article['reviews'] . '</a>' . '<br>';
         echo '<a class="plach__price">' . $article['price'] . '</a>' . '<br>';
+        echo '<img src="svg/vs.svg" class="plach__vs">';
+        echo '<img src="svg/like.svg" class="plach__like" name="like">';
         echo '</div>';
     }
-
     ?>
 </body>
 </html>
