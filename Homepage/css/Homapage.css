@@ -348,7 +348,7 @@ h3 {
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: 4%;
+  width: 6%;
 }
 
 .swiper-pagination-bullet {
@@ -361,7 +361,7 @@ h3 {
 
 .swiper-pagination-bullet-active {
 	position: relative;
-	background-color: rgb(255, 0, 0);
+	background-color: #E8AA31;
 	opacity: 1;
 }
 
@@ -490,17 +490,24 @@ h3 {
 }
 
 .сhoice__tabs {
-  
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .сhoice__item {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 511px;
-  height: 293px;
+	width: 32%;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 	padding: 30px 30px;
+  margin: 16px 0px;
 }
 
 .сhoice__info {
@@ -508,18 +515,98 @@ h3 {
 }
 
 .сhoice__heading{
+  margin-bottom: 45px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 142%;
   color: #000000;
+  border-bottom: 2px solid #E8AA31; 
+  z-index: 2;
+}
+
+.choice__ellipse {
+  transform: translateY(-3px);
+  margin-right: 10px;
 }
 
 .сhoice__descr {
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 189%;
   color: #000000;
+}
+
+.choice__img__item {
+  position: relative;
+}
+
+.choice__one {
+  top: 49px;
+}
+
+.choice__two {
+  top: 53px;
+}
+
+.choice__three {
+  top: 100px;
+}
+
+.choice__four {
+  top: 34px;
+  left: 30px;
+}
+
+.choice__five {
+  top: 63px;
+}
+
+.choice__six {
+  left: 30px;
+} 
+
+.bestseller__container {
+  margin-top: 121px;
+}
+
+.bestseller__container__heading {
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 153%;
+  letter-spacing: 0.05em;
+  color: #141414;
+}
+
+.bestseller__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 256%;
+  letter-spacing: 0.05em;
+  color: rgba(20, 20, 20, 0.58);
+}
+
+.bestseller__link:hover, :active {
+  color: #E8AA31;
+}
+
+.bestseller__link__icon {
+  margin-left: 10px;
+  transform: translateY(2px);
 }
 
