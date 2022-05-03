@@ -1,9 +1,23 @@
+body{
+    max-width: 1400px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* плашка с товарами */
 .plach{
-    position: absolute;
+    display: inline-block;
+    position: relative;
     width: 375px;
+    max-width: 375px;
     height: 525px;
+    left: 350px;
+    margin-bottom: 60px;
+    margin-right: 130px;
     background: #FEFEFE;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    top: 50px;
 }
 .plach__image{
     position: absolute;
@@ -32,9 +46,38 @@
     font-family: Arial;
     font-size: 16px;
     color: #ABABAB;
-    top: 60%;
+    top: 61.8%;
     left: 74%;
 }
+
+
+.plach__rating{
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    top: 60%;
+    left: 13%;
+}
+.plach__rating__item{
+    color: #ABABAB;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .2s;
+    
+}
+.plach__rating__item:hover,
+.plach__rating__item:hover ~ .plach__rating__item{
+    color: #E8AA31;
+}
+
+.plach__rating[data-total-value="1"] .plach__rating__item:nth-child(n + 5),
+.plach__rating[data-total-value="2"] .plach__rating__item:nth-child(n + 4),
+.plach__rating[data-total-value="3"] .plach__rating__item:nth-child(n + 3),
+.plach__rating[data-total-value="4"] .plach__rating__item:nth-child(n + 2),
+.plach__rating[data-total-value="5"] .plach__rating__item:nth-child(n + 1){
+    color: #E8AA31;
+}
+
 .plach__price{
     position: absolute;
     font-family: Arial;
@@ -54,4 +97,255 @@
     position: absolute;
     top: 75%;
     left: 76%;
+}
+/* левое меню */
+
+.left__menu{
+    position: absolute;
+    width: 300px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-top: 50px;
+}
+.left__menu__text{
+    position: absolute;
+    background: #141414;
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 240px;
+    color: White;
+    font-family: Arial;
+    font-size: 20px;
+}
+.left__menu__button__one{
+    position: absolute;
+    border: 1px solid #CBCBCB;
+    padding: 15px;
+    font-family: Arial;
+    top: 100px;
+    left: 30px;
+}
+.left__menu__button__two{
+    position: absolute;
+    border: 1px solid #CBCBCB;
+    padding: 15px;
+    font-family: Arial;
+    top: 100px;
+    left: 131px;
+}
+#left__menu__range{
+    -webkit-appearance: none;
+    height: 0px;
+    border-radius: 3px;
+    outline: none;
+    border: black solid 2px;
+    position: absolute;
+    top: 250px;
+    left: 38px;
+    width: 191px;
+}
+#left__menu__range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+}
+.left__menu__text__range{
+    position: absolute;
+    padding: 15px;
+    font-family: Arial;
+    top: 260px;
+    left: 80px;
+    font-size: 20px;
+}
+.left__menu__production__text{
+    position: absolute;
+    background: #141414;
+    padding: 30px;
+    width: 240px;
+    color: White;
+    font-family: Arial;
+    font-size: 20px;
+    top: 320px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.left__menu__production__checkbox{
+    position: absolute;
+    font-family: Arial;
+    top: 430px;
+    left: 34px;
+}
+.left__menu__steel__text{
+    position: absolute;
+    background: #141414;
+    padding: 30px;
+    width: 240px;
+    color: White;
+    font-family: Arial;
+    font-size: 20px;
+    top: 710px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.left__menu__steel__checkbox{
+    position: absolute;
+    font-family: Arial;
+    top: 820px;
+    left: 34px;
+}
+.left__menu__handle__text{
+    position: absolute;
+    background: #141414;
+    padding: 30px;
+    width: 240px;
+    color: White;
+    font-family: Arial;
+    font-size: 20px;
+    top: 1110px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.left__menu__handle__checkbox{
+    position: absolute;
+    font-family: Arial;
+    top: 1220px;
+    left: 34px;
+}
+.left__menu__gilding__text{
+    position: absolute;
+    background: #141414;
+    padding: 30px;
+    width: 240px;
+    color: White;
+    font-family: Arial;
+    font-size: 20px;
+    top: 1490px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.left__menu__gilding__checkbox{
+    position: absolute;
+    font-family: Arial;
+    top: 1600px;
+    left: 34px;
+}
+.left__menu__total__length__mm__text{
+    position: absolute;
+    background: #141414;
+    padding: 30px;
+    width: 240px;
+    color: White;
+    font-family: Arial;
+    font-size: 20px;
+    top: 1670px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.left__menu__total__length__mm__one{
+    position: absolute;
+    border: 1px solid #CBCBCB;
+    padding: 15px;
+    font-family: Arial;
+    top: 1800px;
+    left: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.left__menu__total__length__mm__two{
+    position: absolute;
+    border: 1px solid #CBCBCB;
+    padding: 15px;
+    font-family: Arial;
+    top: 1800px;
+    left: 142px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#left__menu__total__length__mm__range{
+    -webkit-appearance: none;
+    height: 0px;
+    border-radius: 3px;
+    outline: none;
+    border: black solid 2px;
+    position: absolute;
+    top: 1870px;
+    left: 38px;
+    width: 202px;
+
+}
+#left__menu__total__length__mm__range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+}
+#left__menu__total__length__mm__number{
+    position: absolute;
+    top: 1900px;
+    left: 120px;
+    font-family: Arial;
+}
+.left__menu__reviews__text{
+    position: absolute;
+    background: #141414;
+    padding: 30px;
+    width: 240px;
+    color: White;
+    font-family: Arial;
+    font-size: 20px;
+    top: 1950px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.left__menu__reviews__checkbox{
+    position: absolute;
+    top: 2040px;
+    left: 34px;
+    font-family: Arial;
+}
+.left__menu__reviews__checkbox__star{
+    color: #E8AA31;
+}
+.left__menu__reviews__checkbox__star__number{
+    color: black;
+}
+.carving__knives__text{
+    position: absolute;
+    font-family: Arial;
+    font-size: 24px;
+    left: 30px;
+}
+.carving__knives__href{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial;
+    left: 31px;
+    top: 30px;
+    color: #ABABAB;
+}
+.carving__knives__href__shop{
+    font-family: Arial;
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    left: 120px;
+    top: 30px;
+    color: #E8AA31;
+}
+.carving__knives__arrow{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    width: 5px;
+    font-family: Arial;
+    left: 101px;
+    top: 35px;
+    color: #ABABAB;
 }
