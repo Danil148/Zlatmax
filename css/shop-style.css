@@ -349,3 +349,20 @@ body{
     top: 35px;
     color: #ABABAB;
 }
+.by__popularity__menu{
+    position: absolute;
+    border: 1px solid rgba(4, 4, 4, 0.3);
+    top: 20px;
+    left: 855px;
+    font-family: Arial;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 230px;
+    color: #ABABAB;
+}
+.by__popularity__menu__arrow{
+    position: absolute;
+    left: 320px;
+    top: 15px;
+}

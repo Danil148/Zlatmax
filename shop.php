@@ -13,7 +13,7 @@
         <a href="#" class="carving__knives__href">Главная</a><img src="svg/arrow.svg" class="carving__knives__arrow"><a href="shop.php" class="carving__knives__href__shop">Разделочные ножи</a>
     </div>
     <div class="by__popularity">
-        <span class="by__popularity__menu">По популярности <img src="svg/"></span>
+        <span class="by__popularity__menu">По популярности<img src="svg/arrow-bottom.svg" class="by__popularity__menu__arrow"></span>
     </div>
     <div class="left__menu">
         <span class="left__menu__text">Фильтр товаров</span>
